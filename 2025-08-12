@@ -1,0 +1,74 @@
+# Input Validation with Python and PyInputPlus
+
+This project showcases various examples and exercises focused on **input validation** in Python using the powerful [`pyinputplus`](https://pypi.org/project/PyInputPlus/) module, alongside custom validation functions and regular expressions.
+
+---
+
+## What You’ll Find Here
+
+- Basic input validation with `inputNum()`, `inputStr()`, and `inputYesNo()`
+- Using `allowRegexes` and `blockRegexes` to control allowed or blocked input patterns
+- Creating custom validation functions with `inputCustom()`
+- Handling input exceptions like `TimeoutException` and `RetryLimitException`
+- Practical examples demonstrating:
+  - Blocking inputs that start with certain digits using regex
+  - Validating that digits add up to a specific number (e.g., sum to 10)
+  - Using regex to allow or block patterns like specific words
+  - Timeout and retry limits to restrict input attempts
+- Understanding old-style string formatting (`%s`) and using `enumerate()` for list processing
+
+# I'm glad to say that i'm finally done with basics of input validation in python and also built some projects like how to make an idiot bust for hours and python multiplication quiz, check my repositories you'll find them there.
+For my next learning phase im starting basics of networking and file handling in python so i can be able to save records of python scripts outputs to a file and my project will be a password with maybe a basic encryption 
+---
+
+## How to Use
+
+1. Install PyInputPlus if you haven’t:
+
+```bash
+pip install pyinputplus
+````
+
+2. Run any of the example scripts or snippets demonstrating input validation techniques:
+
+```bash
+python input_validation_example.py
+```
+
+3. Modify the regex patterns or custom functions to fit your own validation needs.
+
+---
+
+## Example: Custom Validation Function
+
+```python
+import pyinputplus as pyip
+
+def addsUpToTen(numbers):
+    numbersList = list(numbers)
+    for i, digit in enumerate(numbersList):
+        numbersList[i] = int(digit)
+    if sum(numbersList) != 10:
+        raise Exception(f'The digits must add up to 10, not {sum(numbersList)}.')
+    return int(numbers)
+
+response = pyip.inputCustom(addsUpToTen)
+print(f'Valid input: {response}')
+```
+
+---
+
+## Author
+
+Shittu Habib
+
+---
+
+This README tracks my learning journey on input validation — mastering how to get reliable, safe user inputs in Python scripts.
+
+```
+
+---
+
+If you want, I can help you turn your actual code snippets from today into ready-to-run example files to go along with this README!
+```
