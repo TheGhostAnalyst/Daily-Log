@@ -1,0 +1,36 @@
+
+## Date: 2025-08-20
+
+
+1. Goals for Today:
+   - Continue file handling in python
+   - Try understanding how some whatsapp bots work
+
+   
+
+2. Tasks Completed:
+   - Learned structured path in file handling like(.parent, .stem, .suffix, .anchor, .drive) and also found out .parent = .parents[0]
+   - Learned that .anchor = .drive on linux
+   - Undrstood the purpose of Whatsapp Bots 
+   
+  
+
+3. Challenges / Issues:
+   - Had some issues when i got to the .parents[n] buh it's taken care of
+   - (os.path.dirname(path), os.path.basename(path)) gave me some issues too
+   - Understood node.js is like a server
+  
+
+4. Solutions / Learnings:
+   - Practice more focus and understanding
+   - Take short breaks to avoid burning out
+  
+
+5. Notes / Ideas:
+   - I understood why it's important to understand pathlib and os module
+   - The answer is always there look less, think more
+  
+
+6. Mood / Energy Level:
+   - 8/10 
+   - productive day
