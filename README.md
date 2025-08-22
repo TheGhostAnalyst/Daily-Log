@@ -33,7 +33,7 @@ Each log entry is organized by **date** (YYYY-MM-DD) and contains:
 - Discovered stealth mode options in headless Chrome
 ````
 
-All logs are stored in the `/logs` directory or in markdown files by current dates of logs (e.g. `2025-08-21.md`).
+All logs are stored in the `/Daily-Logs` directory or in markdown files by current dates of logs (e.g. `2025-08-21.md`).
 
 
 
